@@ -1,0 +1,9 @@
+name: Github Actions Demo
+on: [push]
+jobs:
+    Test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello, imooc!"
+            - run: echo "${{ github.event_name }}"
+            
